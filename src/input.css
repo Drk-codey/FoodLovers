@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.button {
+    display: flex;
+    padding: 18.295px 26.494px 18.295px 41.325px;
+    align-items: center;
+    gap: 26.631px;
+    border-radius: 50px;
+    border: 1px solid var(--fuschia-100, #EF5DA8);
+    background: #EF5DA8;
+    box-shadow: 0px 5px 30px 0px rgba(239, 93, 168, 0.30);
+}
+
+.order_btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.6px; /* 120% */
+    letter-spacing: 0.5px;
+}
