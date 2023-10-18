@@ -6,16 +6,17 @@
     <link href="output.css" rel="stylesheet" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body class="font-poppins">
+    <!-- Header Section -->
     <nav class="relative bg-white -border">
       <div class="w-full max-w-screen-2xl mx-auto px-2 md:px-4 lg:px-5">
         <div class="flex h-16 items-center justify-between">
           <h1 class="text-2xl md:text-3xl font-semibold">FoodLover</h1>
           <!-- Primary Navbar items -->
-          <div class="absolute top-16 left-0 hidden w-full bg-pink-100 bg-opacity-90 md:bg-transparent md:static md:block md:w-auto mobile-menu border">
+          <div class="absolute top-16 left-0 hidden w-full bg-pink-100 bg-opacity-90 md:bg-transparent md:static md:block md:w-auto mobile-menu">
             <ul class="font-medium flex flex-col list-none p-4 md:p-0 md:flex-row md:items-center md:space-x-8 md:mt-0">
-              <li>
-                <a href="#" class="px-2 py-1 block text-lg md:text-base text-pink-500 md:p-0 hover:opacity-60" >Home</a>
+              <li class="active">
+                <a href="#" class="font-poppins px-2 py-1 block text-lg md:text-base text-pink-500 md:p-0 hover:opacity-60" >Home</a>
               </li>
               <li>
                 <a href="#" class="px-2 py-1 block text-lg md:text-base md:p-0 hover:opacity-60">About us</a>
@@ -73,7 +74,7 @@
               </defs>
             </svg>
           </div>
-          <p class="text-2xl lg:text-3xl font-semibold lg:font-bold text-center mb-7">Order food from favourite restaurant near you.</p>
+          <p class="text-2xl lg:text-3xl font-mono font-semibold lg:font-bold text-center mb-7">Order food from favourite restaurant near you.</p>
           <div class=""> <!-- Order Button-->
             <div class="w-max m-auto p-5 relative">
               <div class="absolute top-1 -right-0">
@@ -111,13 +112,13 @@
                 <img class="w-16 h-16 -ml-7 rounded-full" src="images/Bhanitu.png" alt="">
               </div>
               <div>
-                <p class="text-black font-semibold ">Custiomer Review</p>
+                <p class="text-black font-semibold text-[14.8px] ">Custiomer Review</p>
                 <div class="flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M10.0013 1.66669L12.5763 6.88335L18.3346 7.72502L14.168 11.7834L15.1513 17.5167L10.0013 14.8084L4.8513 17.5167L5.83464 11.7834L1.66797 7.72502L7.4263 6.88335L10.0013 1.66669Z" fill="#FBC400"/>
                   </svg>
                   <p class="text-black font-bold pl-1">4.8</p>
-                  <p class="pl-0.5">(5k reviews)</p>
+                  <p class="text-[13.8px] pl-0.5">(5k reviews)</p>
                 </div>
               </div>
             </div>
@@ -127,18 +128,254 @@
       
     </div>
     <img src="images/HeroVector.png" alt=""> <!--Hero Bottom Vector-->
-    
-  <!-- <script>
-    // Grab HTML Elements
-    const btn = document.querySelector("button.mobile-menu-button");
-    const menu = document.querySelector(".mobile-menu");
-  
-    // Add Event Listeners
-    btn.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-    });
-  </script> -->
 
+    <!-- Order Inspiration Section -->
+    <div class="w-full p-16">
+      <p class="block text-2xl sm:text-3xl text-center m-auto -mt-4 mb-5">
+        Inspiration for <span class="text-primary">your first order</span>
+      </p>
+      <div class="max-w-screen-xl m-auto flex flex-wrap gap-9 md:gap-0 justify-evenly sm:w-[450px] md:w-full">
+        <div class="food flex flex-col items-center p-1 !bg-primary">
+          <img src="images/burger.svg" alt="" class="w-16 mt-2 rounded-full">
+          <p class="mt-2 text-white">Burger</p>
+        </div>
+        <div class="food flex flex-col items-center p-1">
+          <img src="images/donut.svg" alt="" class="w-16 mt-2 rounded-full">
+          <p class="mt-2">Donut</p>
+        </div>
+        <div class="food flex flex-col items-center p-1">
+          <img src="images/pizza.svg" alt="" class="w-16 mt-2 rounded-full">
+          <p class="mt-2">Pizza</p>
+        </div>
+        <div class="food flex flex-col items-center p-1">
+          <img src="images/hotdog.svg" alt="" class="w-16 mt-2 rounded-full">
+          <p class="mt-2">Hotdog</p>
+        </div>
+        <div class="food flex flex-col items-center p-1">
+          <img src="images/Cheeese.svg" alt="" class="w-16 mt-2 rounded-full">
+          <p class="mt-2">Cheese</p>
+        </div>
+        <div class="food flex flex-col items-center p-1">
+          <img src="images/icecream.svg" alt="" class="w-16 mt-2 rounded-full">
+          <p class="mt-2">Icecream</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Special Meals Section -->
+    <div class="h-[700px] bg-bgGradient -mt-4 py-1">
+      <p class="block text-2xl sm:text-3xl text-center m-auto mt-16 mb-5">
+        Our <span class="text-primary">Specials</span>
+      </p>
+      <div class="w-full h">
+
+      </div>
+    </div>
+    <img src="images/Abstract2.svg" alt="">
+
+    <!-- Delivery Section -->
+    <div class="p-6 md:p-12 xl:px-32 mb-3">
+      <div class="flex flex-col items-center md:flex-row md:justify-evenly lg:-mt-10 max-w-screen-2xl m-auto">
+        <!-- Delivery Image -->
+        <div class="md:w-1/2 lg:w-fit ">
+          <img class="lg:w-[550px]" src="images/deliveyMan.svg" alt="Delivery Man">
+        </div>
+        <!-- Order Container -->
+        <div class="flex flex-col items-center justify-evenly md:w-1/2 lg:w-[45%]">
+          <p class="text-2xl md:text-3xl text-center mb-5">
+            Stay At Home. We Will Provide <span class="text-primary">Good Food</span>
+          </p>
+          <p class="text-lg text-[#223645] text-center px-4">
+            We provide tasty food and super fast delivery at your home. 
+            Use our service right Now and get 50% Discount.
+          </p>
+          <div class="w-max mt-4 p-5 relative"> <!--Order btn-->
+            <div class="absolute top-1 -right-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                <g clip-path="url(#clip0_1_874)">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.58561 64.0759C3.38868 63.5496 3.20149 63.0206 3.02404 62.489L62.6438 2.86918C63.1754 3.04664 63.7045 3.23383 64.2307 3.43075L3.58561 64.0759ZM5.78058 69.0424C5.53581 68.5656 5.29971 68.0855 5.07229 67.6023L67.7571 4.91744C68.2403 5.14487 68.7204 5.38096 69.1973 5.62573L5.78058 69.0424ZM8.42742 73.5571C8.13992 73.1242 7.86032 72.6876 7.58865 72.2474L72.4023 7.4338C72.8424 7.70548 73.279 7.98507 73.712 8.27258L8.42742 73.5571ZM11.4865 77.6596C11.1594 77.2672 10.8396 76.8708 10.5271 76.4705L76.6253 10.3723C77.0256 10.6847 77.4221 11.0045 77.8144 11.3317L11.4865 77.6596ZM14.9343 81.3733C14.7528 81.1974 14.5723 81.0198 14.3929 80.8405C14.2136 80.6611 14.0359 80.4806 13.8601 80.2991L80.4539 13.7052C80.6355 13.8811 80.8159 14.0587 80.9953 14.2381C81.1747 14.4175 81.3523 14.5979 81.5282 14.7795L14.9343 81.3733ZM18.7629 84.7062C18.3626 84.3938 17.9662 84.074 17.5738 83.7469L83.9017 17.419C84.2289 17.8113 84.5487 18.2078 84.8611 18.6081L18.7629 84.7062ZM22.986 87.6448C22.5458 87.3731 22.1092 87.0935 21.6763 86.806L86.9608 21.5214C87.2483 21.9543 87.5279 22.391 87.7996 22.8311L22.986 87.6448ZM27.6311 90.1611C27.1479 89.9337 26.6678 89.6976 26.191 89.4528L89.6077 26.0361C89.8524 26.513 90.0885 26.9931 90.316 27.4763L27.6311 90.1611ZM32.7444 92.2094C32.2128 92.0319 31.6838 91.8447 31.1575 91.6478L91.8026 31.0027C91.9996 31.5289 92.1868 32.058 92.3642 32.5896L32.7444 92.2094ZM38.4018 93.7136C37.813 93.5956 37.226 93.4664 36.6411 93.3258L93.4806 36.4863C93.6212 37.0711 93.7505 37.6581 93.8684 38.2469L38.4018 93.7136ZM45.0732 94.5617C44.4073 94.5248 43.7419 94.4739 43.0777 94.4088L94.5637 42.9228C94.6287 43.5871 94.6797 44.2524 94.7166 44.9184L45.0732 94.5617ZM52.3961 94.4004C51.6232 94.4775 50.8488 94.5355 50.0736 94.5745L94.7293 49.9187C94.6903 50.694 94.6323 51.4684 94.5552 52.2413L52.3961 94.4004ZM61.3321 92.626C60.3625 92.9183 59.3854 93.1788 58.4023 93.4073L93.5621 58.2475C93.3336 59.2305 93.0732 60.2077 92.7808 61.1772L61.3321 92.626ZM75.7365 85.3831C73.8558 86.7803 71.8947 88.0193 69.8712 89.0999L89.2548 69.7164C88.1741 71.7398 86.9352 73.701 85.538 75.5816L75.7365 85.3831ZM58.7471 1.7528L1.90765 58.5923C1.76706 58.0074 1.63779 57.4204 1.51986 56.8316L56.9864 1.36501C57.5753 1.48294 58.1623 1.61221 58.7471 1.7528ZM50.315 0.516844C50.981 0.553737 51.6463 0.604703 52.3106 0.669742L0.824591 52.1557C0.759555 51.4915 0.708583 50.8261 0.671694 50.1602L50.315 0.516844ZM42.9921 0.678202C43.765 0.601104 44.5394 0.543066 45.3147 0.504089L0.658936 45.1598C0.697908 44.3846 0.75595 43.6102 0.83305 42.8373L42.9921 0.678202ZM34.0562 2.45259C35.0257 2.16023 36.0029 1.8998 36.9859 1.67128L1.82612 36.8311C2.05464 35.848 2.31508 34.8709 2.60744 33.9013L34.0562 2.45259ZM19.6518 9.69544C21.5324 8.29824 23.4936 7.05931 25.517 5.97864L6.13349 25.3622C7.21416 23.3387 8.45309 21.3776 9.85029 19.4969L19.6518 9.69544Z" fill="#EF5DA8"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_874">
+                    <rect width="95" height="95" fill="white" transform="translate(0.449951 0.294983)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <button class="button relative">
+              <span class="order_btn text-white ">Order Now</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28" fill="none">
+                <g clip-path="url(#clip0_1_871)">
+                  <path d="M13.9561 26.795C21.1358 26.795 26.9561 20.9747 26.9561 13.795C26.9561 6.61528 21.1358 0.794983 13.9561 0.794983C6.77635 0.794983 0.956055 6.61528 0.956055 13.795C0.956055 20.9747 6.77635 26.795 13.9561 26.795Z" fill="white" fill-opacity="0.4"/>
+                  <path d="M11.9561 8.79498L15.9561 13.795L11.9561 18.795" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_871">
+                    <rect width="26" height="27" fill="white" transform="translate(0.956055 0.294983)"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>              
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chef Display Section -->
+    <div class="bg-bgGradient md:-mt-10 p-6 md:p-14 xl:px-32">
+      <p class="block text-3xl sm:text-4xl text-center m-auto mb-10">
+        Introduce with Our <span class="text-primary block">Famous Chef</span>
+      </p>
+      <div class="flex flex-wrap w-full md:justify-evenly md:gap-1 max-w-screen-2xl m-auto">
+        <div class="w-full md:w-fit h-full py-3">
+          <div class="mt-32 w-fit m-auto">
+            <div class="relative w-60 h-60 bg-primary outline outline-1 outline-offset-4 outline-gray-200 rounded-full">
+              <img class="absolute -bottom-[0.5px]" src="images/Shaapir.png" alt="">
+            </div>
+          </div>
+          <div class="m-auto pt-5">
+            <h3 class="text-xl text-center capitalize">shaapir pria</h3>
+            <p class="text-center capitalize">head chef</p>
+          </div>
+        </div>
+
+        <div class="w-full md:w-fit h-full py-3">
+          <div class="mt-32 w-fit m-auto">
+            <div class="relative w-60 h-60 bg-primary outline outline-1 outline-offset-4 outline-gray-200 rounded-full">
+              <img class="absolute -bottom-[1px]" src="images/Sellina.png" alt="">
+            </div>
+          </div>
+          <div class="m-auto pt-5">
+            <h3 class="text-xl text-center capitalize">Sellina</h3>
+            <p class="text-center capitalize">chef</p>
+          </div>
+        </div>
+
+        <div class="w-full md:w-fit h-full py-3">
+          <div class="mt-32 w-fit m-auto">
+            <div class="relative w-60 h-60 bg-primary outline outline-1 outline-offset-4 outline-gray-200 rounded-full">
+              <img class="absolute -bottom-[0.2px]" src="images/john.png" alt="">
+            </div>
+          </div>
+          <div class="m-auto pt-5">
+            <h3 class="text-xl text-center capitalize">john smith</h3>
+            <p class="text-center capitalize">assitant chef</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Testimonial Section -->
+    <div class="p-6 md:px-12 md:py-16 xl:px-32 max-[320px]:px-2">
+      <p class="block capitalize text-3xl sm:text-4xl text-center m-auto mt-4 mb-10">
+        we care about our 
+        <span class="text-primary block capitalize">customer experience<span class="text-black"> too</span></span>
+      </p>
+      <div class="max-w-screen-2xl m-auto mb-8 flex flex-col items-center gap-10 md:flex-row flex-wrap justify-center md:gap-16 lg:justify-evenly">
+        <div class="max-w-[340px] p-5 rounded-[30px] max-[320px]:p-3 shadow-outsideBox">
+          <div class="flex justify-between h-[90px]">
+            <div class="self-end"><img class="rounded-full" src="images/businessMan.png" alt=""></div>
+            <div class="self-center mt-6">
+              <p class="font-semibold">Sameer Madhani</p>
+              <p class="text-sm">One Year With Us</p>
+            </div>
+            <svg class="max-[320px]:w-12" xmlns="http://www.w3.org/2000/svg" width="62" height="48" viewBox="0 0 62 48" fill="none">
+              <path d="M36.3389 47.9981C42.2019 47.8033 47.4365 46.0493 51.4759 42.927C62.1826 34.6484 61.9766 19.045 61.918 17.3192L61.9159 1.04721C61.9159 0.46915 61.2903 2.30876e-06 60.5196 2.24138e-06L39.0938 3.68273e-07C38.323 3.00893e-07 37.6975 0.469148 37.6975 1.04721L37.6975 17.1171C37.6975 17.6952 38.323 18.1643 39.0938 18.1643L50.0441 18.1643C50.0427 19.5063 49.8255 31.4162 42.9328 36.7286C41.0674 38.1664 38.8585 38.9356 36.1791 39.0765C35.4467 39.1152 34.8812 39.5713 34.8812 40.121L34.8812 46.9514C34.8812 47.2373 35.0369 47.5096 35.312 47.708C35.587 47.906 35.9529 48.0159 36.3389 47.9981Z" fill="#EF5DA8"/>
+              <path d="M0.45809 47.7086C0.733854 47.906 1.0913 48.0159 1.48575 47.9981C7.3487 47.8033 12.5833 46.0493 16.6221 42.927C27.3287 34.6489 27.1227 19.045 27.0641 17.3192L27.0627 1.04721C27.0627 0.46915 26.4372 2.30882e-06 25.6664 2.24144e-06L4.2399 3.68274e-07C3.46916 3.00893e-07 2.84363 0.469148 2.84363 1.04721L2.84363 17.1171C2.84363 17.6951 3.46916 18.1643 4.2399 18.1643L15.1895 18.1643C15.1867 19.5063 14.9703 31.4162 8.07895 36.7286C6.21353 38.1664 4.00463 38.9356 1.32518 39.0765C0.593529 39.1152 0.0273403 39.5713 0.0273402 40.121L0.0273396 46.9514C0.0273396 47.2373 0.182326 47.5106 0.45809 47.7086Z" fill="#EF5DA8"/>
+            </svg>
+          </div>
+          <p class="mt-3">Really nice place with garden and party faculty you can celebrate your birthday, anniversary etc.</p>
+        </div>
+        <div class="max-w-[340px] bg-primary p-5 max-[320px]:p-3 rounded-[30px] shadow-outsideBox">
+          <div class="flex justify-between h-[90px]">
+            <div class="self-end"><img class="rounded-full" src="images/businessMan.png" alt=""></div>
+            <div class="self-center mt-6">
+              <p class="text-white font-semibold">Sameer Madhani</p>
+              <p class="text-white text-sm">One Year With Us</p>
+            </div>
+            <svg class="max-[320px]:w-12" xmlns="http://www.w3.org/2000/svg" width="62" height="48" viewBox="0 0 62 48" fill="none">
+              <path d="M36.3389 47.9981C42.2019 47.8033 47.4365 46.0493 51.4759 42.927C62.1826 34.6484 61.9766 19.045 61.918 17.3192L61.9159 1.04721C61.9159 0.46915 61.2903 2.30876e-06 60.5196 2.24138e-06L39.0938 3.68273e-07C38.323 3.00893e-07 37.6975 0.469148 37.6975 1.04721L37.6975 17.1171C37.6975 17.6952 38.323 18.1643 39.0938 18.1643L50.0441 18.1643C50.0427 19.5063 49.8255 31.4162 42.9328 36.7286C41.0674 38.1664 38.8585 38.9356 36.1791 39.0765C35.4467 39.1152 34.8812 39.5713 34.8812 40.121L34.8812 46.9514C34.8812 47.2373 35.0369 47.5096 35.312 47.708C35.587 47.906 35.9529 48.0159 36.3389 47.9981Z" fill="#ffffff"/>
+              <path d="M0.45809 47.7086C0.733854 47.906 1.0913 48.0159 1.48575 47.9981C7.3487 47.8033 12.5833 46.0493 16.6221 42.927C27.3287 34.6489 27.1227 19.045 27.0641 17.3192L27.0627 1.04721C27.0627 0.46915 26.4372 2.30882e-06 25.6664 2.24144e-06L4.2399 3.68274e-07C3.46916 3.00893e-07 2.84363 0.469148 2.84363 1.04721L2.84363 17.1171C2.84363 17.6951 3.46916 18.1643 4.2399 18.1643L15.1895 18.1643C15.1867 19.5063 14.9703 31.4162 8.07895 36.7286C6.21353 38.1664 4.00463 38.9356 1.32518 39.0765C0.593529 39.1152 0.0273403 39.5713 0.0273402 40.121L0.0273396 46.9514C0.0273396 47.2373 0.182326 47.5106 0.45809 47.7086Z" fill="#ffffff"/>
+            </svg>
+          </div>
+          <p class="text-white mt-3">Really nice place with garden and party faculty you can celebrate your birthday, anniversary etc.</p>
+        </div>
+        <div class="max-w-[340px] p-5 rounded-[30px] max-[320px]:p-3 shadow-outsideBox">
+          <div class="flex justify-between h-[90px]">
+            <div class="self-end"><img class="rounded-full" src="images/businessMan.png" alt=""></div>
+            <div class="self-center mt-6">
+              <p class="font-semibold">Sameer Madhani</p>
+              <p class="text-sm">One Year With Us</p>
+            </div>
+            <svg class="max-[320px]:w-12" xmlns="http://www.w3.org/2000/svg" width="62" height="48" viewBox="0 0 62 48" fill="none">
+              <path d="M36.3389 47.9981C42.2019 47.8033 47.4365 46.0493 51.4759 42.927C62.1826 34.6484 61.9766 19.045 61.918 17.3192L61.9159 1.04721C61.9159 0.46915 61.2903 2.30876e-06 60.5196 2.24138e-06L39.0938 3.68273e-07C38.323 3.00893e-07 37.6975 0.469148 37.6975 1.04721L37.6975 17.1171C37.6975 17.6952 38.323 18.1643 39.0938 18.1643L50.0441 18.1643C50.0427 19.5063 49.8255 31.4162 42.9328 36.7286C41.0674 38.1664 38.8585 38.9356 36.1791 39.0765C35.4467 39.1152 34.8812 39.5713 34.8812 40.121L34.8812 46.9514C34.8812 47.2373 35.0369 47.5096 35.312 47.708C35.587 47.906 35.9529 48.0159 36.3389 47.9981Z" fill="#EF5DA8"/>
+              <path d="M0.45809 47.7086C0.733854 47.906 1.0913 48.0159 1.48575 47.9981C7.3487 47.8033 12.5833 46.0493 16.6221 42.927C27.3287 34.6489 27.1227 19.045 27.0641 17.3192L27.0627 1.04721C27.0627 0.46915 26.4372 2.30882e-06 25.6664 2.24144e-06L4.2399 3.68274e-07C3.46916 3.00893e-07 2.84363 0.469148 2.84363 1.04721L2.84363 17.1171C2.84363 17.6951 3.46916 18.1643 4.2399 18.1643L15.1895 18.1643C15.1867 19.5063 14.9703 31.4162 8.07895 36.7286C6.21353 38.1664 4.00463 38.9356 1.32518 39.0765C0.593529 39.1152 0.0273403 39.5713 0.0273402 40.121L0.0273396 46.9514C0.0273396 47.2373 0.182326 47.5106 0.45809 47.7086Z" fill="#EF5DA8"/>
+            </svg>
+          </div>
+          <p class="mt-3">Really nice place with garden and party faculty you can celebrate your birthday, anniversary etc.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- App Download Section -->
+    <div class="flex flex-col-reverse xl:flex-row bg-bgColor px-6 py-16 md:px-12 md:p-16 xl:pb-0 xl:px-32 2xl:px-40">
+      <div class="w-full 2xl:w-[45%] 2xl:flex 2xl:flex-col 2xl:justify-center">
+        <p class="block capitalize text-3xl sm:text-4xl text-center m-auto mt-4 mb-5">
+          restaurants in
+          <span class="text-primary">your pocket</span>
+        </p>
+        <p class="text-center md:text-lg mb-6">
+          Order from your favorite restaurants & track on the go, with the all-new Swiggy app.
+        </p>
+        <div class="flex justify-evenly sm:justify-center sm:gap-6 ">
+          <img class="w-[45%] sm:w-48" src="images/Google download.png" alt="">
+          <img class="w-[45%] sm:w-48" src="images/appDownload.png" alt="">
+        </div>
+      </div>
+      <div class="w-full h-[200px] sm:h-72 2xl:h-[450px] overflow-hidden">
+        <img class="m-auto" src="images/apple-stack.png" alt="Iphone Stack">
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-black text-textGray capitalize p-6 md:px-12 sm:pt-16 xl:px-32">
+      <div class="flex flex-col gap-y-4 lg:flex-row flex-wrap lg:gap-y-5 justify-evenly ">
+        <div class="w-full lg:w-[450px] xl:w-[28%] space-y-4">
+          <p class="text-white text-3xl">FoodLover Club</p>
+          <p class="max-w-[80%]" >
+            A perfect place for perfect food, all kind of parties and any other gathering as well, for our guests to simply unwind and relax in complete serenity.
+          </p>
+          <div>
+          </div>
+        </div>
+        <div class="w-full lg:w-[450px] xl:w-[20%] space-y-4">
+          <p class="text-white text-2xl">quick links</p>
+          <p><a href="#">menu</a></p>
+          <p><a href="#">Gallery</a></p>
+          <p><a href="#">contact</a></p>
+          <p><a href="#">Order Now</a></p>
+        </div>
+        <div class="w-full lg:w-[450px] xl:w-[20%] space-y-4">
+          <p class="text-white text-2xl">company</p>
+          <p><a href="#">about</a></p>
+          <p><a href="#">term</a></p>
+          <p><a href="#">privacy policy</a></p>
+          <p><a href="#">Refund policy</a></p>
+        </div>
+        <div class="w-full lg:w-[450px] xl:w-[24%] space-y-4">
+          <p class="text-white text-2xl">contact</p>
+          <p>call<span>:  +91 9512212240</span></p>
+          <p>email<span>:  foodloversksb@gmail.com</span></p>
+          <p>
+            address<span>: Food Lovers, The Family Garden Restaurant, Kuwarda Chowkdi, Kosamba.</span>
+          </p>
+        </div>
+      </div>
+      <div class="mt-12 =border-t-[1px] border-t border-white border-opacity-20">
+        <p class="text-center  pt-6">
+          Copyright © 2021 Food Lovers All Rights Reserved Designed By Ajay Mongia
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
-
