@@ -45,16 +45,19 @@
 input[type=radio] {
   position: relative;
   top: 56%;
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   margin: 0 15px 0 0;
-  background-color: white;
-  opacity: 0.4;
   cursor: pointer;
+  appearance: none;
+  background-color: #fff;
+  color: #ef5da8;
+  border: 0.15em solid #ef5da8;
+  border-radius: 50%;
 }
 
 #slider input[type=radio]:checked {
-  accent-color: #ef5da8;
+  background-color: #ef5da8;
 }
 
 #slider label {
