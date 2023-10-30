@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       width: {},
+      screens: {
+        'xs': '480px'
+      },
       colors: {
         bgColor: '#FCEEFD',
         pinkBg: '#FDF5FE',
